@@ -22,4 +22,8 @@ export class TasksComponent {
       this.tasks=this.tasks.filter((t)=> t.id !==task.id)
     ));
   }
+  toggleReminder(task:Task){
+    console.log(task.reminder);
+    task.reminder=!task.reminder;
+  }
 }
