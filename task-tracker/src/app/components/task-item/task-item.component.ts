@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {Task} from "../../Task"
-import {TASKS} from "../../mock-task"
+
 
 @Component({
   selector: 'app-task-item',
@@ -10,7 +10,7 @@ import {TASKS} from "../../mock-task"
 
 export class TaskItemComponent {
   @Input() task!: Task;
-  tasks : Task[]=TASKS
+
 
   constructor(){
 
