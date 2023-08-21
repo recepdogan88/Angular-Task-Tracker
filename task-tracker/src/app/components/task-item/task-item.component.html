@@ -1,13 +1,9 @@
 <div class="task">
   <div>
-    <h3>{{task.text}}</h3>
+    <h3>{{task.text}} <span >X</span></h3>
     <p>{{task.day}}</p>
   </div>
   <div>
-    <button class="delete">Delete</button>
+    <button class="delete" (click)="onDelete(task)">Delete</button>
   </div>
-
-
-
-
 </div>
