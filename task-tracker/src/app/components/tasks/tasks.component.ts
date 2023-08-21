@@ -23,7 +23,7 @@ export class TasksComponent {
     ));
   }
   toggleReminder(task:Task){
-    console.log(task.reminder);
     task.reminder=!task.reminder;
+    this.taskService.updateTaskReminder(task).subscribe();
   }
 }
